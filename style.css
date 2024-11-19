@@ -1,6 +1,12 @@
 @font-face{
     font-family: 'TTLakes';
-    src: local('TTLakes'), url("../fonts/TTLakes-Regular.ttf");
+    src: url('../fonts/TTLakesCondensed-ExtraLight.eot');
+    src: local('TT Lakes Condensed ExtraLight'), local('TTLakesCondensed-ExtraLight'),
+        url('../fonts/TTLakesCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakesCondensed-ExtraLight.woff') format('woff'),
+        url('../fonts/TTLakesCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* @font-face {
