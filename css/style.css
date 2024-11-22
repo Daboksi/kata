@@ -14,7 +14,7 @@
 @font-face {
     font-family: TT Lakes;
     font-weight: 900;
-    font-style: normal;
+    font-style: black;
     src: local('TT Lakes'),
         url('./fonts/TTLakes-Black.eot') format('eot'),
         url('./fonts/TTLakes-Black.woff2') format('woff2'),
@@ -26,7 +26,7 @@
 @font-face {
     font-family: TT Lakes;
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
     src: local('TT Lakes'),
         url('./fonts/TTLakes-Bold.eot') format('eot'),
         url('./fonts/TTLakes-Bold.woff2') format('woff2'),
