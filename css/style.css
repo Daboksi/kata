@@ -1,36 +1,3 @@
-/*@font-face{
-    font-family: 'TTLakes';
-    src: url('../fonts/TTLakesCondensed-ExtraLight.eot');
-    src: local('TT Lakes Condensed ExtraLight'), local('TTLakesCondensed-ExtraLight'),
-        url('../fonts/TTLakesCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TTLakesCondensed-ExtraLight.woff') format('woff'),
-        url('../fonts/TTLakesCondensed-ExtraLight.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-/* @font-face {
-    font-family: 'TT Lakes Condensed';
-    src: url('../fonts/TTLakesCondensed-ExtraLight.eot');
-    src: local('TT Lakes Condensed ExtraLight'), local('TTLakesCondensed-ExtraLight'),
-        url('../fonts/TTLakesCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TTLakesCondensed-ExtraLight.woff') format('woff'),
-        url('../fonts/TTLakesCondensed-ExtraLight.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes Bold';
-    src: url('../fonts/TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TTLakes-Bold.woff') format('woff'),
-        url('../fonts/TTLakes-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-} */
-
 body {
     margin: 0;
     background-color: #F8F8F8;
@@ -404,7 +371,8 @@ nav {
         content: "Оставить заявку";
         margin-left: 5px;
         font-family: 'TT Lakes';
-        font-weight: bolder;
+        font-weight: normal;
+        font-weight: 500;
         font-size: 16px;
         flex-wrap: nowrap;
         position: absolute;
@@ -417,7 +385,7 @@ nav {
         content: "Статус ремонта";
         margin-left: 5px;
         font-family: 'TT Lakes';
-        font-weight: bold;
+        font-weight: normal;
         font-size: 16px;
         display: flex;
         flex-wrap: nowrap;
