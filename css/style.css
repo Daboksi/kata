@@ -10,7 +10,6 @@ body {
 .header-menu {
     min-width: 320px;
     min-height: 88px;
-    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #D9FFF5;
@@ -18,7 +17,7 @@ body {
     margin-right: 16px;
 }
 
-.header-menu__burger-icon {
+.round-icon {
     width: 40px;
     height: 40px;
     background: url('../img/burger.svg');
@@ -28,66 +27,44 @@ body {
     background-size: contain;
 }
 
-.header-menu__cps-icon {
+.round-icon--burger {
+    background: url('../img/burger.svg');
+}
+
+.round-icon--cps {
     width: 96.55px;
     height: 50.81px;
     background: url('../img/Group.svg');
     border-radius: 30%;
-    border-width: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.header-menu__repair-icon {
-    width: 40px;
-    height: 40px;
+.round-icon--repair {
     background: url('../img/repair.svg');
-    border-radius: 50%;
-    border-width: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.header-menu__checkstatus-icon {
-    width: 40px;
-    height: 40px;
+.round-icon--checkstatus {
     background: url('../img/checkstatus.svg');
-    border-radius: 50%;
-    border-width: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.header-menu__call-icon {
-    width: 40px;
-    height: 40px;
+.round-icon--call {
     background: url('../img/call.svg');
-    border-radius: 50%;
-    border-width: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.header-menu__chat-icon {
-    width: 40px;
-    height: 40px;
+.round-icon--chat {
     background: url('../img/chat.svg');
-    border-radius: 50%;
-    border-width: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.header-menu__profile-icon {
-    width: 40px;
-    height: 40px;
+.round-icon--profile {
     background: url('../img/profile.svg');
-    border-radius: 50%;
-    border-width: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
+.title-container__svg {
+    width: 4px;
+    height: 40px;
+    background-image: url('../img/highlight.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .title-container__text {
     font-family: 'TT Lakes';
@@ -104,7 +81,7 @@ body {
     min-width: 280px;
 }
 
-.navigation-bar {
+.navbar__list {
     display: flex;
     font-family: 'TT Lakes';
     font-style: normal;
@@ -112,6 +89,9 @@ body {
     font-size: 16px;
     margin-left: 16px;
     letter-spacing: -0.2px;
+    flex-direction: row;
+    list-style: none;
+    margin: 20px;
 }
 
 .navbar__item {
@@ -121,7 +101,6 @@ body {
     margin: 0 5px;
     border-width: 2px;
     border-color: transparent;
-    background-color: #FFFFFF;
     position: relative;
 }
 
@@ -142,12 +121,13 @@ body {
 
 .company {
     margin: 0 16px;
+    display: flex;
 }
 
 .text {
     font-family: 'TT Lakes';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 14px;
     color: #1B1C21;
     letter-spacing: 0.2px;
@@ -167,11 +147,20 @@ body {
     display: block;
 }
 
+.company__readmore {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 22px;
+}
+
 .readmore__button {
     border-width: 0;
     background-color: transparent;
     padding: 5px;
     letter-spacing: -0.2px;
+    text-wrap: nowrap;
 }
 
 .readmore__button:active {
@@ -180,8 +169,12 @@ body {
     background-color: #cacaca;
 }
 
-.company__png {
-    margin: 10px;
+.readmore__svg {
+    width: 8px;
+    height: 10px;
+    background-image: url('../img/icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -218,6 +211,8 @@ body {
 
 .title-container__left-container {
     display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
 nav {
@@ -246,17 +241,14 @@ nav {
         flex-grow: 1;
     }
 
-    nav {
-        overflow-x: scroll;
+    .navbar__list {
+        z-index: -1;
+        flex-wrap: nowrap;
+        overflow-x: scroll
     }
 
     nav::-webkit-scrollbar {
         width: 0;
-    }
-
-    .navigation-bar {
-        z-index: -1;
-        flex-wrap: nowrap;
     }
 
     .navigation-bar::before {
@@ -265,10 +257,22 @@ nav {
         right: 0px;
         width: 50px;
         height: 40px;
-        background-image: linear-gradient(to left, white, transparent);
+        background-image: 
+        linear-gradient(to left, white, transparent);
         z-index: 1;
         position: absolute;
-    }
+    } 
+ 
+    .navigation-bar::after {
+        content: '';
+        display: block;
+        left: 0px;
+        width: 50px;
+        height: 40px;
+        background-image: linear-gradient(to right, white, transparent);
+        z-index: 1;
+        position: absolute;
+    } 
 
     .title-container__right-container {
         display: none;
@@ -280,10 +284,6 @@ nav {
 
     .company__text2 {
         display: block;
-    }
-
-    .company {
-        display: flex;
     }
 
     .company__right-container {
@@ -298,7 +298,7 @@ nav {
         width: 0;
     }
 
-    .navigation-bar {
+    .navbar__list {
         z-index: -1;
         flex-wrap: nowrap;
     }
@@ -322,11 +322,15 @@ nav {
 
 @media (min-width:1120px) {
 
+    .title-container {
+        margin-top: 40px;
+    }
+
     .header-menu {
         display: none;
     }
 
-    .navigation-bar {
+    .navbar__list {
         flex-wrap: wrap;
     }
 
@@ -379,7 +383,7 @@ nav {
         right: 50px;
         width: max-content;
         letter-spacing: -0.2px;
-      }
+    }
 
     .header-menu__checkstatus-icon--pc::before {
         content: "Статус ремонта";
@@ -401,6 +405,7 @@ nav {
 
     .company {
         display: flex;
+        margin-top: 10px;
     }
 
 }

@@ -34,17 +34,18 @@
     font-display: swap;
 }
 
-/* @font-face {
-    font-family: 'TT Lakes';
-    src: url('fonts/TTLakesCondensed-ExtraLight.eot');
-    src: local('TT Lakes Condensed ExtraLight'), local('fonts/TTLakesCondensed-ExtraLight'),
-        url('fonts/TTLakesCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/TTLakesCondensed-ExtraLight.woff') format('woff'),
-        url('fonts/TTLakesCondensed-ExtraLight.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+@font-face {
+    font-family: TT Lakes;
+    font-weight: 300;
+    font-style: light;
+    /* src: url('fonts/TTLakesCondensed-ExtraLight.eot'); */
+    src: local('TT Lakes'),
+        url('./fonts/TTLakesCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakesCondensed-ExtraLight.woff') format('woff'),
+        url('./fonts/TTLakesCondensed-ExtraLight.ttf') format('truetype');
 }
 
+/*
 @font-face {
     font-family: 'TT Lakes';
     src: url('fonts/TTLakes-Bold.eot');
