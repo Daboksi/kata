@@ -13,24 +13,24 @@
 <body>
   <header class="header-menu">
     <div class="header__left-menu-container">
-      <button class="header-menu__burger-icon"></button>
+      <button class="round-icon round-icon--burger"></button>
       <img class="header-menu__divider-icon1" src="img/divider.svg" alt="">
-      <button class="header-menu__cps-icon"></button>
+      <a class="round-icon round-icon--cps" href="#"></a>
     </div>
     <div class="header__center-menu-container">
-      <button class="header-menu__call-icon"></button>
-      <button class="header-menu__chat-icon"></button>
-      <button class="header-menu__profile-icon"></button>
+      <button class="round-icon round-icon--call"></button>
+      <button class="round-icon round-icon--chat"></button>
+      <button class="round-icon round-icon--profile"></button>
     </div>
     <img class="header-menu__divider-icon2" src="img/divider.svg" alt="">
     <div class="header__right-menu-container">
-      <button class="header-menu__repair-icon"></button>
-      <button class="header-menu__checkstatus-icon"></button>
+      <button class="round-icon round-icon--repair"></button>
+      <button class="round-icon round-icon--checkstatus"></button>
     </div>
   </header>
   <div class="title-container">
     <div class="title-container__left-container">
-      <img class="title-container__svg" src="img/highlight.svg" alt="">
+      <div class="title-container__svg"></div>
       <h1 class="title-container__text">Услуги и сервисы</h1>
     </div>
     <div class="title-container__right-container">
@@ -38,23 +38,24 @@
       <button class="header-menu__checkstatus-icon--pc"></button>
     </div>
   </div>
-  <nav>
-    <div class="navigation-bar">
-      <button class="navbar__item"><a class="navbar__link" href="#">Ремонтируемые устройства </a></button>
-      <button class="navbar__item"><a class="navbar__link" href="#">Дополнительные услуги</a></button>
-      <button class="navbar__item"><a class="navbar__link" href="#">Цены на услуги</a></button>
-      <button class="navbar__item"><a class="navbar__link" href="#">Специальные цены</a></button>
-      <button class="navbar__item"><a class="navbar__link" href="#">Адреса сервисных центров</a></button>
-      <button class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></li>
-    </div>
-  </nav>
+    <nav class="navigation-bar">
+      <ul class="navbar__list">
+      <li class="navbar__item"><a class="navbar__link" href="#">Ремонтируемые устройства </a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#">Дополнительные услуги</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#">Цены на услуги</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#">Специальные цены</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#">Адреса сервисных центров</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></li>
+      </ul>
+    </nav>
   <main>
     <section class="company">
       <div class="company__left-container">
         <p class="text company__text1">Мы являемся авторизованным сервисным центром
-          по ремонту
+          по ремонту 
           техники Dell. Только у нас вы можете отремонтировать свой
           ноутбук Dell с официальной гарантией производителя.</p>
+          <br>
         <p class="text company__text2">
           Мы успешно работаем с 1992 года и заслужили репутацию
           надежного партнера, что подтверждает большое количество
@@ -62,17 +63,17 @@
           рекомендациям и, в свою очередь, советуют нас родным и
           близким.
         </p>
-        <div class="company__readmore">
-          <img class="readmore__svg" src="img/icon.svg" alt="">
+        <div class="dropdown company__readmore">
+          <div class="readmore__svg"></div>
           <button class="readmore__button">Читать далее</button>
         </div>
       </div>
       <div class="company__right-container">
-        <img class="company__png" src="img/_MG_3223_1.png" alt="cps" width="320" height="176">
+        <img class="company__png" src="./img/_MG_3223_1.png" alt="cps" width="320" height="176">
       </div>
     </section>
   </main>
-  <script src="main.js"></script>
+  <!-- <script src="main.js"></script> -->
 </body>
 
 </html>
