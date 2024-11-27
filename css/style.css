@@ -100,8 +100,8 @@ body {
     padding: 8px;
     margin: 0 5px;
     border-width: 2px;
-    border-color: transparent;
     position: relative;
+    background-color: transparent;
 }
 
 .navbar__item:hover {
@@ -252,25 +252,25 @@ nav {
         width: 0;
     }
 
-    .navigation-bar::before {
+    .navbar__list::before {
         content: '';
         display: block;
         right: 0px;
         width: 50px;
         height: 40px;
         background-image: 
-        linear-gradient(to left, white, transparent);
+        linear-gradient(to left, #F8F8F8, transparent);
         z-index: 1;
         position: absolute;
     } 
  
-    .navigation-bar::after {
+    .navbar__list::after {
         content: '';
         display: block;
         left: 0px;
         width: 50px;
         height: 40px;
-        background-image: linear-gradient(to right, white, transparent);
+        background-image: linear-gradient(to right, #F8F8F8, transparent);
         z-index: 1;
         position: absolute;
     } 
@@ -304,16 +304,27 @@ nav {
         flex-wrap: nowrap;
     }
 
-    .navigation-bar::before {
+    .navbar__list::before {
         content: '';
         display: block;
         right: 0px;
         width: 50px;
         height: 40px;
-        background-image: linear-gradient(to left, white, transparent);
+        background-image: linear-gradient(to left, #F8F8F8, transparent);
         z-index: 1;
         position: absolute;
     }
+
+    .navbar__list::after {
+        content: '';
+        display: block;
+        left: 0px;
+        width: 50px;
+        height: 40px;
+        background-image: linear-gradient(to right, #F8F8F8, transparent);
+        z-index: 1;
+        position: absolute;
+    } 
 
     .title-container__right-container {
         display: none;
