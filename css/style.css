@@ -92,6 +92,7 @@ body {
     flex-direction: row;
     list-style: none;
     margin: 20px;
+    overflow-x: scroll;
 }
 
 .navbar__item {
@@ -144,7 +145,7 @@ body {
     color: #1B1C21;
 }
 
-.show-text {
+ .show-text {
     display: block;
 }
 
@@ -178,6 +179,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.png {
+    margin: 0 20px;
+    max-width: 360px;
+    max-height: 208px;
+    min-width: 320px;
+    min-height: 176px;
+}
+
+.company__png--mobile {
+    display: none;
+}
 
 .header-menu {
     display: flex;
@@ -216,11 +228,28 @@ body {
     margin-top: 20px;
 }
 
-nav {
-    overflow-x: scroll;
+.header-menu__divider-icon1 {
+    display: none;
+}
+
+.header-menu__divider-icon2 {
+    display: none;
+    width: 2px;
+    height: 32px;
+    background: url('../img/divider.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @media (min-width:0px) and (max-width:767px) {
+
+    .company__png--mobile {
+        display: block;
+    }
+
+    .company__png--pc {
+        display: none;
+    }
 
     .company__text2 {
         display: none;
@@ -230,6 +259,10 @@ nav {
         display: none;
     }
 
+    .header-menu__divider-icon2 {
+        display: block;
+    }
+    
     .header__center-menu-container {
         display: none;
     }
@@ -283,6 +316,23 @@ nav {
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
 
+    .company__png--mobile {
+        display: none;
+    }
+
+    .header-menu__divider-icon1 {
+        display: block;
+        width: 2px;
+        height: 32px;
+        background: url('../img/divider.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header-menu__divider-icon2 {
+        display: block;
+    }
+
     .company__text2 {
         display: block;
     }
@@ -330,6 +380,11 @@ nav {
         display: none;
     }
 
+    .png {
+        max-width: 360px;
+        max-height: 208px;
+    }
+
 }
 
 @media (min-width:1120px) {
@@ -349,8 +404,7 @@ nav {
     .title-container__right-container {
         display: flex;
         justify-content: space-around;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 0 16px;
         align-items: center;
         margin-left: auto;
     }
@@ -418,6 +472,11 @@ nav {
     .company {
         display: flex;
         margin-top: 10px;
+    }
+
+    .png {
+        max-width: 531px;
+        max-height: 307px;
     }
 
 }
